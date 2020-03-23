@@ -24,6 +24,17 @@ p{
     margin: 2em;
 
 }
+
+table, td, tr{
+    text-align: left;
+    border-collapse: collapse;
+    vertical-align: top;
+
+}
+li{
+    padding: .35em;
+    text-align: justify;
+}
 section {
     float:left;
     width: 60%;
@@ -37,7 +48,7 @@ aside {
     font-family: sans-serif;
 }
 
-}
+
 .logo {
     color:#3366cc;
     margin-left:1%;
