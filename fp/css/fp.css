@@ -1,0 +1,119 @@
+/* Baby Lestina Website Styles */
+
+html {
+    background-color: #D2E7C4;
+}
+
+main {
+    background-color: #fffff0;
+    width: 80%;
+    margin: auto;
+    
+}
+h1 a{
+    text-decoration: none;
+    color: #82758A;
+}
+
+h1,h2,h3{
+    color: #82758A;
+    margin: 1em;
+}
+
+p{
+    margin: 2em;
+    color: #82758A;
+
+}
+section {
+    float:left;
+    width: 60%;
+    margin: auto;
+    font-family: sans-serif;
+   
+}
+
+aside {
+    float:right;
+    width: 39%;
+    font-family: sans-serif;
+   
+    
+}
+
+.logo {
+    color:#413A45;
+    margin-left:1%;
+    text-shadow:1px 1px #ccc;
+    font-size:1.25em;
+}
+
+/* font awesome icon styles */
+i.logo {
+    color:#413A45; /* a less boring color */
+    text-shadow:1px 1px #ccc; /* gives the icon a little depth */
+    font-size:1.25em; /* font awesome icons are text, so make it a bit bigger */
+    margin-left:1%; /* this keeps the icon from being squeeezed to the left */
+}
+
+
+/* START Global Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.embed-container.agenda-view {
+    display:none;
+}
+
+/* END Global Embed Responsively Rules! */
+
+footer {
+    text-align:center;
+    text-transform:uppercase;
+    clear:both;
+}
+
+footer p {
+    padding:2em;
+}
+
+footer a {
+    color:#413A45;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color:white;
+    background-color:black;
+}
+    
+
+/* Phat PHONE Rules! */
+@media all and (max-width:860px) {
+    div.wrapper {
+        background-color:#413A45;
+    }
+    
+    /* Show Agenda View Calendar */
+    div.embed-container.agenda-view {
+        display:block;
+    }
+    
+    /* Hide Month View Calendar */
+    div.embed-container.month-view {
+        display:none;
+    }
+}
